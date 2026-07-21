@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ronith Naveen Kumar</title>
+<meta name="description" content="Data analytics and machine learning projects by Ronith Naveen Kumar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="nav-mark">RONITH<span>.</span>NK</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="wrap reveal">
+    <p class="eyebrow">Projects</p>
+    <h1 style="font-size: clamp(2rem, 4vw, 2.8rem);">Four datasets, four business questions</h1>
+    <p>Each project below follows the same loop: clean the data, ask a real question, quantify the answer, and translate it for a non-technical stakeholder.</p>
+  </div>
+</div>
+
+<!-- ============ PROJECT 1 ============ -->
+<section id="sales-dashboard">
+  <div class="wrap">
+    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+      <div>
+        <p class="eyebrow">01 · Python · Pandas · Matplotlib · Jupyter</p>
+        <h2>Sales Dashboard Analysis</h2>
+        <p>Cleaned and analysed 9,994 retail sales records spanning four years (2014–2017) from the Superstore dataset,
+        then built a 6-chart interactive dashboard to surface revenue growth and regional performance trends.</p>
+        <p>Correlation analysis (r = −0.22 between discount and profit) identified the <strong>Tables</strong>
+        sub-category as a $17,725 loss driver — discounted at an average of 30% versus 15% across the rest of the
+        catalogue — and turned that into an actionable pricing recommendation.</p>
+        <div class="chip-row" style="margin: 20px 0;">
+          <span class="chip">Python</span><span class="chip">Pandas</span><span class="chip">Matplotlib</span><span class="chip">Seaborn</span><span class="chip">Jupyter</span>
+        </div>
+        <a href="https://github.com/Ronith13/sales-dashboard-analysis" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow">KPIs at a glance</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px;">
+          <div><p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--teal-dark); margin: 0;">$2.29M</p><p style="font-size: 0.82rem; margin:0;">Total revenue</p></div>
+          <div><p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--teal-dark); margin: 0;">12.5%</p><p style="font-size: 0.82rem; margin:0;">Profit margin</p></div>
+          <div><p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--teal-dark); margin: 0;">5,009</p><p style="font-size: 0.82rem; margin:0;">Total orders</p></div>
+          <div><p style="font-family: var(--font-mono); font-size: 1.5rem; color: var(--teal-dark); margin: 0;">47%</p><p style="font-size: 0.82rem; margin:0;">Revenue growth '14→'17</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PROJECT 2 ============ -->
+<section id="sql-analytics">
+  <div class="wrap">
+    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+      <div class="card" style="order: 2;">
+        <p class="eyebrow">10 queries, one schema</p>
+        <ul style="padding-left: 18px; color: var(--ink-soft); font-size: 0.92rem; margin: 18px 0 0;">
+          <li>Campaign ROI &amp; ROAS ranking</li>
+          <li>View → like → share engagement funnel</li>
+          <li>Cohort retention by signup week</li>
+          <li>Z-score outlier detection on posts</li>
+          <li>Composite efficiency score (min-max normalised)</li>
+        </ul>
+      </div>
+      <div style="order: 1;">
+        <p class="eyebrow">02 · SQL · PostgreSQL</p>
+        <h2>Social Media Marketing Analytics</h2>
+        <p>Designed a 6-table normalised PostgreSQL schema (users, campaigns, posts, engagements, ad spend, conversions)
+        and wrote 10 advanced SQL queries — CTEs, window functions, and cohort logic — to analyse campaign ROI,
+        engagement funnels, and content performance.</p>
+        <p>Built a composite efficiency-scoring model using min-max normalisation across CTR, ROAS, and engagement rate,
+        plus NTILE()-based customer LTV segmentation (Champions / Loyal / At-Risk), mirroring a real Marketing
+        Data Analyst workflow.</p>
+        <div class="chip-row" style="margin: 20px 0;">
+          <span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Window Functions</span><span class="chip">Cohort Analysis</span>
+        </div>
+        <a href="https://github.com/Ronith13/social-media-marketing-sql-analytics" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PROJECT 3 ============ -->
+<section id="fashion-recommender">
+  <div class="wrap">
+    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+      <div>
+        <p class="eyebrow">03 · Python · Scikit-learn · Pandas</p>
+        <h2>Smart Fashion Recommender</h2>
+        <p>Built a collaborative-filtering recommendation engine on a synthetic dataset of 10,000+ users and 500
+        clothing items, covering EDA, feature engineering, and model evaluation.</p>
+        <p>Compared four models — KNN-based collaborative filtering and SVD at different component counts —
+        via hyperparameter tuning, with the best configuration (CF-KNN, k=20) reaching <strong>Precision@5: 0.87</strong>
+        and an F1-score of 0.75.</p>
+        <div class="chip-row" style="margin: 20px 0;">
+          <span class="chip">Python 3.11</span><span class="chip">Scikit-learn</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
+        </div>
+        <a href="https://github.com/Ronith13/smart-fashion-recommender" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow">Model comparison</p>
+        <table style="width: 100%; margin-top: 14px; font-size: 0.85rem; border-collapse: collapse;">
+          <thead>
+            <tr style="text-align: left; color: var(--muted);">
+              <th style="padding: 6px 0; border-bottom: 1px solid var(--border);">Model</th>
+              <th style="padding: 6px 0; border-bottom: 1px solid var(--border);">Precision@5</th>
+              <th style="padding: 6px 0; border-bottom: 1px solid var(--border);">F1</th>
+            </tr>
+          </thead>
+          <tbody style="font-family: var(--font-mono);">
+            <tr><td style="padding: 8px 0; border-bottom: 1px solid var(--border);">CF-KNN (k=20)</td><td style="border-bottom: 1px solid var(--border); color: var(--teal-dark); font-weight: 600;">0.871</td><td style="border-bottom: 1px solid var(--border);">0.754</td></tr>
+            <tr><td style="padding: 8px 0; border-bottom: 1px solid var(--border);">CF-KNN (k=15)</td><td style="border-bottom: 1px solid var(--border);">0.849</td><td style="border-bottom: 1px solid var(--border);">0.734</td></tr>
+            <tr><td style="padding: 8px 0; border-bottom: 1px solid var(--border);">SVD (150 comp.)</td><td style="border-bottom: 1px solid var(--border);">0.810</td><td style="border-bottom: 1px solid var(--border);">0.699</td></tr>
+            <tr><td style="padding: 8px 0;">SVD (100 comp.)</td><td>0.736</td><td>0.633</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ PROJECT 4 ============ -->
+<section id="cyber-security">
+  <div class="wrap">
+    <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;">
+      <div class="card" style="order: 2;">
+        <p class="eyebrow">Usability pilot (n=5)</p>
+        <div style="margin-top: 16px;">
+          <p style="font-size: 0.85rem; margin-bottom: 6px;">SUS score</p>
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 4px;">
+            <span style="width: 90px; font-family: var(--font-mono); font-size: 0.8rem;">Interactive</span>
+            <div style="flex:1; background: var(--bg-alt); border-radius: 6px; height: 10px; overflow: hidden;">
+              <div style="width: 82.5%; background: var(--teal); height: 100%;"></div>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem;">82.5</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="width: 90px; font-family: var(--font-mono); font-size: 0.8rem;">Static</span>
+            <div style="flex:1; background: var(--bg-alt); border-radius: 6px; height: 10px; overflow: hidden;">
+              <div style="width: 61%; background: var(--ochre); height: 100%;"></div>
+            </div>
+            <span style="font-family: var(--font-mono); font-size: 0.8rem;">61.0</span>
+          </div>
+        </div>
+      </div>
+      <div style="order: 1;">
+        <p class="eyebrow">04 · Python · Tableau · MSc Dissertation</p>
+        <h2>Visualising Logical Cyber Security Arguments</h2>
+        <p>My MSc dissertation at the University of Strathclyde: an interactive tool that visualises Attack-Defence
+        Trees and Dung-style argumentation semantics for ePassport (ICAO 9303) security, making formal security
+        arguments understandable to non-technical stakeholders.</p>
+        <p>Modelled 6 attack vectors and 5 defences with DREAD scoring, and evaluated the interactive prototype
+        against static reference material using the System Usability Scale and comprehension testing — the
+        interactive version scored notably higher on both usability and comprehension.</p>
+        <div class="chip-row" style="margin: 20px 0;">
+          <span class="chip">Python</span><span class="chip">Tableau</span><span class="chip">Data Wrangling</span><span class="chip">Argumentation Theory</span>
+        </div>
+        <a href="https://github.com/Ronith13/visualisation-cyber-security-arguments" target="_blank" rel="noopener" class="btn btn-outline">View on GitHub →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 Ronith Naveen Kumar. Built with data, not templates.</p>
+    <ul class="footer-links">
+      <li><a href="https://www.linkedin.com/in/ronithn/" target="_blank" rel="noopener">LinkedIn</a></li>
+      <li><a href="https://github.com/Ronith13" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="mailto:ronith2001@gmail.com">Email</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
